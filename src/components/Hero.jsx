@@ -104,7 +104,7 @@ const Hero = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            href="#projects"
+            href="#PersonalProjects"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold text-base rounded-full transition-all shadow-primary-glow hover:shadow-lg hover:shadow-primary/40 hover:-translate-y-1"
           >
             {language === "en" ? "View Projects" : "Ver Proyectos"}{" "}

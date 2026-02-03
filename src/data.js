@@ -1,73 +1,72 @@
 import {
-  Code,
   Database,
   Layout,
   Server,
   Smartphone,
-  Globe,
-  Palette,
-  Terminal,
+  HardDrive,
+  Cloud,
+  Monitor,
   Cpu,
 } from "lucide-react";
 
 export const personalData = {
   en: {
     name: "Fernando Abel Lujan Lomas",
-    role: "Full Stack Developer",
+    role: "Junior Full Stack Developer",
     description:
-      "I build accessible, pixel-perfect, and performant web experiences. Focused on creating software that helps people.",
+      "I’m a junior developer starting my journey in software development, learning by building real projects and constantly improving my skills.",
     aboutTitle: "About Me",
     aboutText1:
-      "I am a dedicated developer with a passion for building digital products that look great and feel even better to use. My journey in web development started with simple static pages and has evolved into building complex, full-stack applications.",
+      "I’m a junior developer who is just starting to step into the professional world of software development. I enjoy building things, understanding how they work, and learning from mistakes along the way.",
     aboutText2:
-      "I believe in clean code, user-centric design, and constant learning. When I'm not coding, you can find me exploring new technologies or contributing to open source.",
+      "Most of my experience comes from academic and personal projects, where I’ve worked on both frontend and backend development. I’m motivated to keep learning, improve my code, and gain real-world experience.",
     stats: {
-      exp: "Years Experience",
-      projects: "Projects Completed",
+      exp: "Learning Experience",
+      projects: "Projects Built",
     },
     personalProjectsTitle: "Personal Projects",
-    schoolProjectsTitle: "Projects developed during my academic training",
-    skillsTitle: "Skills & Expertise",
+    schoolProjectsTitle: "Academic Projects",
+    skillsTitle: "Skills I’m Learning",
     contactTitle: "Get In Touch",
-    contactHeading: "Let's Talk",
+    contactHeading: "Let’s Talk",
     contactText:
-      "I'm currently available for freelance projects and full-time opportunities. If you have a project that needs some creative touch, or just want to say hi, feel free to drop a message.",
+      "I’m looking for opportunities to learn, collaborate, and grow as a developer. If you have advice, feedback, or a project where I can contribute, feel free to reach out.",
     form: {
       name: "Name",
       email: "Email",
       message: "Message",
       send: "Send Message",
     },
-    status: "Available for work",
+    status: "Open to opportunities",
   },
   es: {
     name: "Fernando Abel Luján Lomas",
-    role: "Desarrollador Full Stack",
+    role: "Desarrollador Full Stack Junior",
     description:
-      "Desarrollo experiencias web accesibles, perfectas y de alto rendimiento. Enfocado en crear software que ayude a las personas.",
+      "Soy un desarrollador junior iniciando mi camino en el desarrollo de software, aprendiendo a través de proyectos reales y mejorando constantemente.",
     aboutTitle: "Sobre Mí",
     aboutText1:
-      "Soy un desarrollador dedicado con pasión por crear productos digitales que se vean bien y se sientan aún mejor al usarlos. Mi viaje en el desarrollo web comenzó con páginas estáticas simples y ha evolucionado hacia la construcción de aplicaciones complejas full-stack.",
+      "Soy un desarrollador junior que está comenzando a integrarse al mundo profesional del desarrollo de software. Me gusta crear cosas, entender cómo funcionan y aprender de los errores en el proceso.",
     aboutText2:
-      "Creo en el código limpio, el diseño centrado en el usuario y el aprendizaje constante. Cuando no estoy programando, puedes encontrarme explorando nuevas tecnologías o contribuyendo al código abierto.",
+      "Mi experiencia proviene principalmente de proyectos académicos y personales, donde he trabajado tanto en frontend como en backend. Tengo muchas ganas de seguir aprendiendo, mejorar mi código y obtener experiencia real.",
     stats: {
-      exp: "Años de Experiencia",
-      projects: "Proyectos Completados",
+      exp: "Experiencia en Aprendizaje",
+      projects: "Proyectos Realizados",
     },
     personalProjectsTitle: "Proyectos Personales",
-    schoolProjectsTitle: "Proyectos desarrollados en mi formación académica",
-    skillsTitle: "Habilidades y Experiencia",
+    schoolProjectsTitle: "Proyectos Académicos",
+    skillsTitle: "Habilidades en Desarrollo",
     contactTitle: "Contáctame",
     contactHeading: "Hablemos",
     contactText:
-      "Actualmente estoy disponible para proyectos freelance y oportunidades de tiempo completo. Si tienes un proyecto que necesita un toque creativo, o simplemente quieres saludar, no dudes en enviar un mensaje.",
+      "Estoy buscando oportunidades para aprender, colaborar y crecer como desarrollador. Si tienes algún consejo, retroalimentación o un proyecto donde pueda aportar, no dudes en contactarme.",
     form: {
       name: "Nombre",
       email: "Correo",
       message: "Mensaje",
       send: "Enviar Mensaje",
     },
-    status: "Disponible para trabajar",
+    status: "Abierto a oportunidades",
   },
   common: {
     email: "lujanlom0120@gmail.com",
@@ -81,13 +80,13 @@ export const personalData = {
 
 export const navLinks = {
   en: [
-    { name: "Projects", href: "#projects" },
+    { name: "Projects", href: "#PersonalProjects" },
     { name: "Skills", href: "#skills" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
   ],
   es: [
-    { name: "Proyectos", href: "#projects" },
+    { name: "Proyectos", href: "#PersonalProjects" },
     { name: "Habilidades", href: "#skills" },
     { name: "Sobre Mí", href: "#about" },
     { name: "Contacto", href: "#contact" },
@@ -98,22 +97,88 @@ export const skills = [
   {
     name: { en: "Frontend Development", es: "Desarrollo Frontend" },
     icon: Layout,
-    items: [],
+    items: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Blade (Laravel)",
+      "Bootstrap",
+      "Ionic UI",
+      "ASP.NET Web Forms",
+      "Windows Forms",
+      "PWA",
+    ],
   },
   {
     name: { en: "Backend Development", es: "Desarrollo Backend" },
     icon: Server,
-    items: [],
+    items: [
+      "Laravel (PHP)",
+      "C# (.NET)",
+      "JavaScript",
+      "VB.NET",
+      "ASP.NET",
+      "Node.js",
+      "Express.js",
+      "RESTful APIs",
+    ],
   },
   {
     name: { en: "Mobile Development", es: "Desarrollo Móvil" },
     icon: Smartphone,
-    items: [],
+    items: [
+      "Ionic Framework",
+      "Capacitor",
+      "React Native",
+      "Progressive Web Apps (PWA)",
+    ],
   },
   {
-    name: { en: "Tools & DevOps", es: "Herramientas y DevOps" },
+    name: { en: "Databases", es: "Bases de Datos" },
+    icon: HardDrive,
+    items: ["MySQL", "PostgreSQL", "SQL Server", "MongoDB"],
+  },
+  {
+    name: { en: "Cloud & Hosting", es: "Nube y Hosting" },
+    icon: Cloud,
+    items: [
+      "DigitalOcean (Droplets)",
+      "Load Balancers",
+      "Vercel",
+      "Firebase Cloud Messaging (FCM)",
+      "Cloudflare",
+    ],
+  },
+  {
+    name: {
+      en: "Server, Security & Infrastructure",
+      es: "Servidores, Seguridad e Infraestructura",
+    },
+    icon: Monitor,
+    items: [
+      "Ubuntu Server",
+      "Linux CLI",
+      "Nginx",
+      "SSH",
+      "Load Balancers",
+      "BD Replication",
+      "HTTPS / SSL",
+      "VPN",
+      "Firewall Rules",
+    ],
+  },
+  {
+    name: { en: "IoT & Hardware", es: "IoT y Hardware" },
+    icon: Cpu,
+    items: ["Arduino", "Sensors"],
+  },
+  {
+    name: {
+      en: "Tools, DevOps & Testing",
+      es: "Herramientas, DevOps y Testing",
+    },
     icon: Database,
-    items: [],
+    items: ["Git", "Postman", "HttpClient (.NET)", "API Testing", "DataTables"],
   },
 ];
 

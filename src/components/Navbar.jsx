@@ -93,7 +93,6 @@ const Navbar = () => {
           </ul>
 
           <div className="hidden md:flex items-center gap-4">
-            {/* Theme Toggle Desktop */}
             <motion.button
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}

@@ -10,7 +10,7 @@ const PersonalProyects = () => {
   const t = personalData[language];
 
   return (
-    <Section id="personalProjects" title={t.personalProjectsTitle}>
+    <Section id="PersonalProjects" title={t.personalProjectsTitle}>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {personalProjects.map((project, index) => (
           <motion.div
