@@ -3,7 +3,8 @@ import { LanguageProvider } from "./context/LanguageContext";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import PersonalProyects from "./components/PersonalProjects";
+import SchoolProyects from "./components/SchoolProyects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -15,7 +16,8 @@ function App() {
         <Navbar />
         <main>
           <Hero />
-          <Projects />
+          <PersonalProyects />
+          <SchoolProyects />
           <Skills />
           <About />
           <Contact />

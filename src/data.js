@@ -12,7 +12,7 @@ import {
 
 export const personalData = {
   en: {
-    name: "User Name",
+    name: "Fernando Abel Lujan Lomas",
     role: "Full Stack Developer",
     description:
       "I build accessible, pixel-perfect, and performant web experiences. Focused on creating software that helps people.",
@@ -26,8 +26,8 @@ export const personalData = {
       projects: "Projects Completed",
       clients: "Happy Clients",
     },
-    projectsTitle: "Featured Projects",
-    projectsLink: "Live Demo",
+    personalProjectsTitle: "Personal Projects",
+    schoolProjectsTitle: "Projects developed during my academic training",
     skillsTitle: "Skills & Expertise",
     contactTitle: "Get In Touch",
     contactHeading: "Let's Talk",
@@ -56,8 +56,8 @@ export const personalData = {
       projects: "Proyectos Completados",
       clients: "Clientes Felices",
     },
-    projectsTitle: "Proyectos Destacados",
-    projectsLink: "Demo en Vivo",
+    personalProjectsTitle: "Proyectos Personales",
+    schoolProjectsTitle: "Proyectos desarrollados en mi formación académica",
     skillsTitle: "Habilidades y Experiencia",
     contactTitle: "Contáctame",
     contactHeading: "Hablemos",
@@ -72,9 +72,9 @@ export const personalData = {
     status: "Disponible para trabajar",
   },
   common: {
-    email: "contact@example.com",
+    email: "lujanlom0120@gmail.com",
     socials: {
-      github: "https://github.com",
+      github: "https://github.com/ABEL0120",
       linkedin: "https://linkedin.com",
       twitter: "https://twitter.com",
     },
@@ -119,7 +119,7 @@ export const skills = [
   },
 ];
 
-export const projects = [
+export const personalProjects = [
   {
     title: "E-commerce Front End",
     description: {
@@ -139,5 +139,56 @@ export const projects = [
     tech: ["Node.js", "Express", "MySQL"],
     link: "#",
     github: "https://github.com/ABEL0120/ecommerce-api.git",
+  },
+];
+
+export const schoolProjects = [
+  {
+    title: "Milwaukee Tool Audits API",
+    description: {
+      en: "Robust backend infrastructure for audit management and real-time data processing, featuring a secure RESTful API.",
+      es: "Infraestructura robusta de backend para la gestión de auditorías y procesamiento de datos en tiempo real, con una API RESTful segura.",
+    },
+    tech: ["Laravel", "PHP", "MySQL", "Blade", "Bootstrap"],
+    link: "#",
+    github: "https://github.com/ABEL0120/Audits-API.git",
+  },
+  {
+    title: "Milwaukee Tool Audits PWA",
+    description: {
+      en: "High-performance Progressive Web App for industrial audits, featuring offline capabilities and a mobile-first interface.",
+      es: "Aplicación Web Progresiva de alto rendimiento para auditorías industriales, con soporte offline e interfaz optimizada para dispositivos móviles.",
+    },
+    tech: ["React", "Ionic", "Capacitor", "Tailwind CSS", "JavaScript", "PWA"],
+    link: "#",
+    github: "https://github.com/ABEL0120/audits-app-pwa.git",
+  },
+  {
+    title: "Security Project",
+    description: {
+      en: "A cloud-based security platform deployed on DigitalOcean, designed with strong emphasis on secure infrastructure, access control, and auditability. The project follows industry best practices in both application development and cloud architecture.",
+      es: "Plataforma de seguridad desarrollada y desplegada sobre infraestructura cloud en DigitalOcean, diseñada bajo estrictas buenas prácticas tanto a nivel de desarrollo como de arquitectura en la nube. El proyecto incluyó la configuración segura de servidores, control de accesos, auditoría de acciones y comunicación cifrada, implementando una infraestructura escalable, robusta y orientada a la protección de la información.",
+    },
+    tech: [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Blade",
+      "Bootstrap",
+      "CSS",
+      "DigitalOcean",
+      "Droplets",
+      "Load Balancers",
+      "VPC",
+      "SSH (Key-based Authentication)",
+      "HTTPS / SSL",
+      "VPN",
+      "Cloudflare",
+      "Linux (Ubuntu)",
+      "Nginx",
+      "Firewall Rules",
+    ],
+    link: "#",
+    github: "https://github.com/ABEL0120/proyecto-seguridad.git",
   },
 ];

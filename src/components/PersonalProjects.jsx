@@ -1,18 +1,18 @@
 import React from "react";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { projects, personalData } from "../data";
+import { personalProjects, personalData } from "../data";
 import { useLanguage } from "../context/LanguageContext";
 import Section from "./Section";
 
-const Projects = () => {
+const PersonalProyects = () => {
   const { language } = useLanguage();
   const t = personalData[language];
 
   return (
-    <Section id="projects" title={t.projectsTitle}>
+    <Section id="personalProjects" title={t.personalProjectsTitle}>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project, index) => (
+        {personalProjects.map((project, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
@@ -23,7 +23,6 @@ const Projects = () => {
           >
             <div className="p-8 flex flex-col flex-grow">
               <div className="flex justify-between items-start mb-6">
-                {/* Icon: Cream Beige (Info) */}
                 <div className="p-3 bg-secondary/10 rounded-xl text-secondary">
                   <ArrowUpRight size={24} />
                 </div>
@@ -37,7 +36,6 @@ const Projects = () => {
                   >
                     <Github size={20} />
                   </a>
-                  {/* Link: Bronze (Action) */}
                   <a
                     href={project.link}
                     target="_blank"
@@ -50,7 +48,6 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Title: White, Bronze on Hover */}
               <h3 className="text-2xl font-heading font-bold text-text-primary mb-3 group-hover:text-primary transition-colors">
                 {project.title}
               </h3>
@@ -59,7 +56,6 @@ const Projects = () => {
                 {project.description[language]}
               </p>
 
-              {/* Tags: Cream borders/text */}
               <div className="flex flex-wrap gap-2 mt-auto">
                 {project.tech.map((tech) => (
                   <span
@@ -78,4 +74,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default PersonalProyects;
