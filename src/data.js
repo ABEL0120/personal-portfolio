@@ -24,7 +24,6 @@ export const personalData = {
     stats: {
       exp: "Years Experience",
       projects: "Projects Completed",
-      clients: "Happy Clients",
     },
     personalProjectsTitle: "Personal Projects",
     schoolProjectsTitle: "Projects developed during my academic training",
@@ -54,7 +53,6 @@ export const personalData = {
     stats: {
       exp: "Años de Experiencia",
       projects: "Proyectos Completados",
-      clients: "Clientes Felices",
     },
     personalProjectsTitle: "Proyectos Personales",
     schoolProjectsTitle: "Proyectos desarrollados en mi formación académica",
@@ -100,22 +98,22 @@ export const skills = [
   {
     name: { en: "Frontend Development", es: "Desarrollo Frontend" },
     icon: Layout,
-    items: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+    items: [],
   },
   {
     name: { en: "Backend Development", es: "Desarrollo Backend" },
     icon: Server,
-    items: ["Node.js", "Express", "PostgreSQL", "MongoDB"],
+    items: [],
   },
   {
     name: { en: "Mobile Development", es: "Desarrollo Móvil" },
     icon: Smartphone,
-    items: ["React Native", "Flutter"],
+    items: [],
   },
   {
     name: { en: "Tools & DevOps", es: "Herramientas y DevOps" },
     icon: Database,
-    items: ["Git", "Docker", "AWS", "CI/CD"],
+    items: [],
   },
 ];
 
@@ -190,5 +188,25 @@ export const schoolProjects = [
     ],
     link: "#",
     github: "https://github.com/ABEL0120/proyecto-seguridad.git",
+  },
+  {
+    title: "Math Calculator",
+    description: {
+      en: "Web application designed to solve numerical methods problems using Improved Euler, Newton-Raphson, and Fourth-Order Runge-Kutta, featuring a SymPy-based engine for mathematical expression parsing.",
+      es: "Aplicación web diseñada para resolver problemas de métodos numéricos mediante Euler Mejorado, Newton-Raphson y Runge-Kutta de Cuarto Orden, con un motor basado en SymPy para el procesamiento de expresiones matemáticas.",
+    },
+    tech: ["Python", "Flask", "HTML", "CSS", "Sympy"],
+    link: "#",
+    github: "https://github.com/ABEL0120/calculadora-mate2-python.git",
+  },
+  {
+    title: "Coffee Web SEO",
+    description: {
+      en: "Static web application optimized for high-performance SEO and Google PageSpeed Insights metrics, achieving maximum scores in accessibility, best practices, and Core Web Vitals.",
+      es: "Aplicación web estática optimizada para SEO de alto rendimiento y métricas de Google PageSpeed Insights, logrando puntajes máximos en accesibilidad, mejores prácticas y Core Web Vitals.",
+    },
+    tech: ["React", "Vite", "Tailwind CSS", "SEO Optimization", "PageSpeed"],
+    link: "#",
+    github: "https://github.com/ABEL0120/coffe-web8",
   },
 ];
