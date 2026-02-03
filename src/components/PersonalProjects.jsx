@@ -19,7 +19,7 @@ const PersonalProyects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true }}
-            className="group relative bg-bg-secondary rounded-2xl border border-white/5 flex flex-col h-full hover:border-secondary/50 transition-all duration-300 hover:shadow-secondary-glow"
+            className="group relative bg-white/60 dark:bg-white/5 rounded-2xl border border-gray-200 dark:border-white/10 flex flex-col h-full hover:border-secondary transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 backdrop-blur-sm"
           >
             <div className="p-8 flex flex-col flex-grow">
               <div className="flex justify-between items-start mb-6">
@@ -31,7 +31,7 @@ const PersonalProyects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="p-2 text-text-secondary hover:text-white transition-colors"
+                    className="p-2 text-text-secondary dark:text-gray-400 hover:text-primary hover:bg-primary/5 dark:hover:bg-primary/20 rounded-lg transition-all"
                     title="View Code"
                   >
                     <Github size={20} />
@@ -40,7 +40,7 @@ const PersonalProyects = () => {
                     href={project.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="p-2 text-text-secondary hover:text-primary transition-colors"
+                    className="p-2 text-text-secondary dark:text-gray-400 hover:text-primary hover:bg-primary/5 dark:hover:bg-primary/20 rounded-lg transition-all"
                     title="Live Link"
                   >
                     <ExternalLink size={20} />
@@ -48,11 +48,11 @@ const PersonalProyects = () => {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-heading font-bold text-text-primary mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-2xl font-heading font-bold text-text-primary dark:text-white mb-3 group-hover:text-primary transition-colors">
                 {project.title}
               </h3>
 
-              <p className="text-text-secondary text-base mb-8 flex-grow leading-relaxed">
+              <p className="text-text-secondary dark:text-gray-400 text-base mb-8 flex-grow leading-relaxed">
                 {project.description[language]}
               </p>
 
@@ -60,7 +60,7 @@ const PersonalProyects = () => {
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1 text-xs font-semibold rounded-md bg-secondary/5 border border-secondary/20 text-secondary"
+                    className="px-3 py-1 text-xs font-semibold rounded-md bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/10 text-text-secondary dark:text-gray-300 hover:text-primary hover:border-primary/20 transition-colors"
                   >
                     {tech}
                   </span>

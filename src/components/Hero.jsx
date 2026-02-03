@@ -23,7 +23,6 @@ const Hero = () => {
       id="hero"
       className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden"
     >
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[120px] -z-10 translate-x-1/3 -translate-y-1/3"></div>
       <div className="max-w-[900px]">
         <motion.div
           initial="hidden"
@@ -52,7 +51,7 @@ const Hero = () => {
               transition: { delay: 0.1, duration: 0.6 },
             },
           }}
-          className="text-6xl md:text-8xl font-heading font-bold leading-[1.1] mb-8 text-text-primary tracking-tight"
+          className="text-6xl md:text-8xl font-heading font-bold leading-[1.1] mb-8 text-text-primary dark:text-white tracking-tight"
         >
           {t.name}
         </motion.h1>
@@ -68,7 +67,7 @@ const Hero = () => {
               transition: { delay: 0.2, duration: 0.6 },
             },
           }}
-          className="text-3xl md:text-5xl font-heading font-semibold mb-8 text-text-secondary"
+          className="text-3xl md:text-5xl font-heading font-semibold mb-8 text-text-secondary dark:text-gray-400"
         >
           {t.role}
         </motion.h2>
@@ -84,7 +83,7 @@ const Hero = () => {
               transition: { delay: 0.3, duration: 0.6 },
             },
           }}
-          className="text-xl text-text-secondary max-w-[650px] mb-12 leading-relaxed"
+          className="text-xl text-text-secondary dark:text-gray-400 max-w-[650px] mb-12 leading-relaxed"
         >
           {t.description}
         </motion.p>
@@ -106,7 +105,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             href="#projects"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-text-primary font-bold text-base rounded-full transition-all shadow-primary-glow hover:shadow-lg hover:shadow-primary/40"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold text-base rounded-full transition-all shadow-primary-glow hover:shadow-lg hover:shadow-primary/40 hover:-translate-y-1"
           >
             {language === "en" ? "View Projects" : "Ver Proyectos"}{" "}
             <ArrowRight size={20} />
@@ -116,7 +115,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             href="/resume.pdf"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border border-white/20 text-text-primary font-medium text-base rounded-full transition-colors hover:bg-white/10 hover:border-white/40"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/50 dark:bg-white/10 border border-gray-300 dark:border-white/10 text-text-primary dark:text-white font-medium text-base rounded-full transition-colors hover:bg-white dark:hover:bg-white/20 hover:border-gray-400 dark:hover:border-white/30 hover:shadow-md"
           >
             {language === "en" ? "Download CV" : "Descargar CV"}{" "}
             <Download size={20} />

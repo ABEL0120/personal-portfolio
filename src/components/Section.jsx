@@ -13,7 +13,7 @@ const Section = ({ id, title, children, className = "" }) => {
             transition={{ duration: 0.5 }}
             className="mb-16 flex flex-col items-center"
           >
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-text-primary text-center">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-text-primary dark:text-white text-center">
               {title}
             </h2>
             {/* Header Underline: Cream Beige */}

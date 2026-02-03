@@ -76,7 +76,7 @@ export const personalData = {
     socials: {
       github: "https://github.com/ABEL0120",
       linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
+      instagram: "https://www.instagram.com/abel0120",
     },
   },
 };

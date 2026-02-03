@@ -20,14 +20,13 @@ const Skills = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="p-8 rounded-2xl bg-bg-secondary border border-white/5 hover:border-secondary transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10"
+              className="p-8 rounded-2xl bg-white/60 dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-secondary transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 backdrop-blur-sm"
             >
               <div className="flex items-center gap-4 mb-6">
-                {/* Icon: Cream Beige */}
-                <div className="p-3 rounded-xl bg-secondary/10 text-secondary">
+                <div className="p-3 rounded-xl bg-primary/10 text-primary">
                   <Icon size={24} />
                 </div>
-                <h3 className="text-lg font-heading font-semibold text-text-primary">
+                <h3 className="text-lg font-heading font-semibold text-text-primary dark:text-white">
                   {skillGroup.name[language]}
                 </h3>
               </div>
@@ -35,7 +34,7 @@ const Skills = () => {
                 {skillGroup.items.map((item) => (
                   <span
                     key={item}
-                    className="px-3 py-1.5 text-sm rounded-lg bg-bg border border-white/10 text-text-secondary hover:text-text-primary hover:border-secondary/50 transition-colors"
+                    className="px-3 py-1.5 text-sm rounded-lg bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/10 text-text-secondary dark:text-gray-300 hover:text-white hover:bg-primary hover:border-transparent transition-colors"
                   >
                     {item}
                   </span>

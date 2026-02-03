@@ -15,7 +15,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-lg text-text-secondary leading-loose space-y-6"
+          className="text-lg text-text-secondary dark:text-gray-300 leading-loose space-y-6"
         >
           <p className="border-l-4 border-secondary pl-6">{t.aboutText1}</p>
           <p className="pl-6">{t.aboutText2}</p>
@@ -32,15 +32,15 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="p-8 rounded-2xl bg-bg-secondary border border-white/5 relative overflow-hidden group hover:border-secondary/30 transition-colors"
+              className="p-8 rounded-2xl bg-white/60 dark:bg-white/5 border border-gray-200 dark:border-white/10 relative overflow-hidden group hover:border-secondary/30 transition-colors"
             >
               <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
                 <div className="w-16 h-16 rounded-full bg-secondary blur-2xl"></div>
               </div>
-              <span className="text-5xl font-heading font-bold text-text-primary block mb-2">
+              <span className="text-5xl font-heading font-bold text-text-primary dark:text-white block mb-2">
                 {stat.number}
               </span>
-              <span className="text-text-secondary text-sm uppercase tracking-wider font-medium">
+              <span className="text-text-secondary dark:text-gray-400 text-sm uppercase tracking-wider font-medium">
                 {stat.label}
               </span>
             </motion.div>
